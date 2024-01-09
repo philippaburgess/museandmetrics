@@ -15,13 +15,13 @@ body {
 }
 
 header {
-    background-color: #ffffff; /* Light background for header */
+    background-color: #ffffff; /* Light background for the header */
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 150px; /* Logo size, adjust as needed */
 }
 
 main {
@@ -30,7 +30,7 @@ main {
     padding: 0 2rem;
 }
 
-#about-the-show, #listen, #subscribe, #follow, #calendar {
+section {
     background-color: #fff;
     margin-bottom: 1rem;
     padding: 2rem;
@@ -38,22 +38,13 @@ main {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.season-cover {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-
 h1, h2 {
     color: #003366; /* A dark blue shade from your branding */
+    font-weight: 700; /* Added weight for better readability */
+}
+
+h1 {
+    margin-bottom: 0.5rem; /* Spacing below the main title */
 }
 
 p {
@@ -61,7 +52,6 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Link Styles */
 a {
     color: #1c95c5; /* A vibrant blue from your branding */
     text-decoration: none;
@@ -71,7 +61,6 @@ a:hover {
     color: #003366; /* Darker blue on hover */
 }
 
-/* Button Styles */
 button {
     background-color: #1c95c5; /* Use the vibrant blue from your branding */
     color: #ffffff;
@@ -80,6 +69,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: 700; /* Make button text bold */
 }
 
 button:hover {
@@ -88,21 +78,27 @@ button:hover {
 
 /* Newsletter Section */
 #subscribe {
-    background-image: url('path-to-newsletter-background.jpg'); /* A background image if you have one */
+    /* If you have a background image for the newsletter section, uncomment below */
+    /* background-image: url('path-to-newsletter-background.jpg');
     background-size: cover;
-    color: #ffffff;
+    color: #ffffff; */
     text-align: center;
+    /* If no background image, consider a solid background color */
+    background-color: #eef4f7; /* A light, neutral background color */
 }
 
-/* Upcoming Episodes Section */
-#calendar {
-    padding: 0; /* Remove padding if calendar iframe needs to be full width */
+/* If the Google Calendar iframe needs to be full width, adjust padding as needed */
+#calendar iframe {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    border: none;
+    border-radius: 8px;
 }
 
-/* Footer Styles */
 footer {
     background-color: #003366; /* A dark blue shade for the footer */
     color: #ffffff;
+    text-align: center;
     padding: 1rem 0;
 }
 
@@ -111,7 +107,7 @@ footer {
     header, main {
         padding: 1rem;
     }
-    
+
     .logo {
         max-width: 100px;
     }
@@ -127,24 +123,5 @@ footer {
     button {
         padding: 8px 16px;
         font-size: 14px;
-    }
-}
-
-.episode-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.episode-gallery img {
-    max-width: calc(33.333% - 1rem);
-    height: auto;
-    border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-    .episode-gallery img {
-        max-width: calc(50% - 1rem);
     }
 }
