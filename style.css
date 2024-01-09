@@ -86,14 +86,14 @@ button:hover {
 
 #stay-connected h2 {
     margin-bottom: 1rem;
+    color: #003366; /* Dark blue for consistency with other headings */
 }
 
 #stay-connected ul {
     list-style: none;
-    padding: 0;
+    padding-left: 1.5rem; /* Indent for list items */
     margin-bottom: 2rem; /* Space before newsletter signup */
 }
-
 
 #stay-connected ul li {
     padding: 0.5rem 0; /* Vertical spacing for list items */
@@ -110,7 +110,7 @@ button:hover {
 }
 
 #stay-connected ul li a:hover {
-    background-color: #003366;
+    background-color: #003366; /* Darker blue on hover */
 }
 
 .newsletter-signup {
@@ -119,14 +119,47 @@ button:hover {
 }
 
 .newsletter-signup h3 {
-    color: #003366;
+    color: #003366; /* Dark blue color for the newsletter heading */
     margin-bottom: 1rem;
 }
 
 .newsletter-signup p {
     color: #666;
     margin-bottom: 2rem; /* Space before the form */
+    font-size: 1rem; /* Adjust font size as needed */
 }
+
+.form-group input[type=email] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group button {
+    background-color: #003366; /* Dark blue to match the headers */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700; /* Make button text bold */
+    margin-top: 1rem; /* Space above the button */
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #1c95c5; /* Lighter blue for hover state */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #stay-connected ul {
+        padding-left: 1rem; /* Smaller indent for list items on smaller screens */
+    }
+}
+
 
 .form-group {
     margin-bottom: 1rem; /* Spacing between form elements */
