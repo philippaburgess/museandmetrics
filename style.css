@@ -94,18 +94,23 @@ button:hover {
     margin-bottom: 2rem; /* Space before newsletter signup */
 }
 
+
 #stay-connected ul li {
     padding: 0.5rem 0; /* Vertical spacing for list items */
 }
 
 #stay-connected ul li a {
-    color: #1c95c5;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    background-color: #1c95c5;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block; /* To apply padding and background */
+    margin-bottom: 0.5rem; /* Space between links */
+    transition: background-color 0.3s;
 }
 
 #stay-connected ul li a:hover {
-    color: #003366;
+    background-color: #003366;
 }
 
 .newsletter-signup {
