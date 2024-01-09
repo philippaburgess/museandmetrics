@@ -1,115 +1,53 @@
-/* General Styles */
-body, html {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/* Reset Margin and Padding */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #212529;
+    box-sizing: border-box;
 }
 
-/* Header Styles */
-header {
-    background-color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-#logo {
-    max-width: 200px; /* Adjust based on your logo's size */
-}
-
-h1 {
-    color: #212529;
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
-
-/* Main Content Styles */
-main {
-    padding: 2rem;
-}
-
-.show-info, .social-media, .calendar {
-    background-color: #ffffff;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    padding: 2rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.show-info h2, .social-media h2, .calendar h2 {
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.show-info p, .social-media p {
-    font-size: 1rem;
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f1f1f1;
     line-height: 1.6;
+    color: #333;
 }
 
-/* Social Media Styles */
-.social-media ul {
-    list-style-type: none;
-    padding: 0;
+header {
+    background-color: #ffffff; /* Light background for header */
+    text-align: center;
+    padding: 2rem;
 }
 
-.social-media li {
-    margin-bottom: 0.5rem;
+.logo {
+    max-width: 150px;
 }
 
-.social-media a {
-    color: #d63384;
-    text-decoration: none;
-    font-weight: bold;
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
 }
 
-/* Calendar Styles */
-.calendar iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
+#about-the-show, #listen, #subscribe, #follow, #calendar {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 2rem;
     border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Newsletter Form Styles */
-.form-container {
-    /* Provided styles */
-    /* ... */
+.season-cover {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #212529;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-    .form-container {
-        padding: 2rem 1rem;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    .show-info h2, .social-media h2, .calendar h2 {
-        font-size: 1.5rem;
-    }
-}
