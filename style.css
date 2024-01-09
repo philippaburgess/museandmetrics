@@ -129,3 +129,22 @@ footer {
         font-size: 14px;
     }
 }
+
+.episode-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.episode-gallery img {
+    max-width: calc(33.333% - 1rem);
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .episode-gallery img {
+        max-width: calc(50% - 1rem);
+    }
+}
