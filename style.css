@@ -51,3 +51,81 @@ footer {
     padding: 1rem 0;
 }
 
+
+h1, h2 {
+    color: #003366; /* A dark blue shade from your branding */
+}
+
+p {
+    color: #666; /* A softer shade for readability */
+    margin-bottom: 1rem;
+}
+
+/* Link Styles */
+a {
+    color: #1c95c5; /* A vibrant blue from your branding */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003366; /* Darker blue on hover */
+}
+
+/* Button Styles */
+button {
+    background-color: #1c95c5; /* Use the vibrant blue from your branding */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
+/* Newsletter Section */
+#subscribe {
+    background-image: url('path-to-newsletter-background.jpg'); /* A background image if you have one */
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Upcoming Episodes Section */
+#calendar {
+    padding: 0; /* Remove padding if calendar iframe needs to be full width */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366; /* A dark blue shade for the footer */
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, main {
+        padding: 1rem;
+    }
+    
+    .logo {
+        max-width: 100px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
