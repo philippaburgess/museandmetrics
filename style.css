@@ -85,15 +85,44 @@ button {
 button:hover {
     background-color: #003366;
 }
+/* Stay Connected Section Styles */
+#stay-connected {
+    text-align: center; /* Center align the section content */
+    padding: 2rem; /* Consistent padding all around */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    margin-bottom: 2rem; /* Space below the section */
+}
+
+#stay-connected h2 {
+    margin-bottom: 1rem; /* Space below the header */
+}
+
+#stay-connected p {
+    margin-bottom: 1rem; /* Space below the paragraph */
+}
+
+/* Social Media Icons and Links */
+#stay-connected .social-icons {
+    display: flex; /* Use flexbox for a horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    gap: 30px; /* Space between the icons */
+    padding: 1rem 0; /* Padding above and below the icons */
+}
 
 #stay-connected .social-icons a {
     background-color: #1c95c5; /* Brand blue color */
     color: white; /* White text */
-    padding: 10px 15px; /* Top and bottom padding 10px, left and right padding 15px */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    margin: 5px; /* Space between buttons */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    padding: 10px 15px; /* Padding inside the buttons */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    text-decoration: none; /* Remove underlines from links */
+    font-size: 1rem; /* Font size for the links */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+    display: inline-flex; /* Inline flex to align text and icons */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content inside the buttons */
 }
 
 #stay-connected .social-icons a:hover {
@@ -101,12 +130,11 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow for hover effect */
 }
 
-#stay-connected .social-icons img {
-    margin-bottom: 20px; /* Space between the icons and text links */
-}
-
-#stay-connected {
-    padding-bottom: 2rem; /* Increase bottom padding to give more space */
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #stay-connected .social-icons {
+        flex-direction: column; /* Stack icons vertically on small screens */
+    }
 }
 
 #calendar iframe {
