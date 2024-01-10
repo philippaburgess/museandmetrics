@@ -22,7 +22,7 @@ header {
 
 .logo, .season-cover, .360-YT, .WTM, .Social, .Newsletter {
     display: block;
-    max-width: 100%;
+    max-width: 90%; /* Slightly smaller than full width for aesthetics */
     height: auto;
     margin: 1rem auto;
 }
@@ -34,13 +34,10 @@ header {
 
 section {
     background-color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 h1, h2 {
@@ -50,16 +47,23 @@ h1, h2 {
 
 h1 {
     margin-bottom: 0.5rem;
+    font-size: 2rem; /* Larger size for main heading */
+}
+
+h2 {
+    font-size: 1.5rem; /* Larger size for section headings */
 }
 
 p {
     color: #666;
     margin-bottom: 1rem;
+    font-size: 1.1rem; /* Slightly larger paragraph font size */
 }
 
 a {
     color: #1c95c5;
     text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger link font size */
 }
 
 a:hover {
@@ -70,10 +74,10 @@ button {
     background-color: #1c95c5;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -86,28 +90,17 @@ button:hover {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-}
-
-#stay-connected h2 {
-    margin-bottom: 1rem;
-    color: #003366;
 }
 
 #stay-connected ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 #stay-connected ul li {
     display: inline-block;
-    margin-right: 15px;
-}
-
-#stay-connected ul li:last-child {
-    margin-right: 0;
+    margin: 0.5rem; /* Space around each social icon */
 }
 
 #stay-connected ul li a {
@@ -115,7 +108,6 @@ button:hover {
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    margin-bottom: 0.5rem;
     transition: background-color 0.3s;
 }
 
@@ -124,35 +116,12 @@ button:hover {
 }
 
 .newsletter-signup {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
-.newsletter-signup label,
-.newsletter-signup input[type="email"],
-.newsletter-signup button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.newsletter-signup input[type="email"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    max-width: 250px; /* Adjust the width of the email input as desired */
-    margin: 0 auto; /* Center the email input */
-}
-
-.newsletter-signup button {
-    background-color: #003366;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
+    background-color: #fff; /* Restores white background */
+    max-width: 600px; /* Width of the newsletter section */
+    margin: 0 auto; /* Centers the newsletter section */
+    padding: 2rem; /* Spacing inside the newsletter section */
+    border-radius: 8px; /* Rounded corners for the newsletter section */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
 }
 
 #calendar iframe {
@@ -169,19 +138,20 @@ footer {
     padding: 1rem 0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .newsletter-signup,
-    #stay-connected ul {
-        flex-direction: column;
+    .logo {
+        max-width: 80%; /* Larger logo for mobile */
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; /* Adjusted font size for mobile */
+    }
+
+    p, a {
+        font-size: 1rem; /* Adjusted font size for mobile */
     }
     
-    .form-group label, .form-group input[type=email] {
-        margin: 5px 0;
+    .newsletter-signup {
+        padding: 2rem 1rem; /* Adjusted padding for mobile */
     }
-
-    .logo {
-        max-width: 100px;
-    }
-
-   
+}
