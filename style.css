@@ -33,8 +33,12 @@ header h3 {
 
 main {
     max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    margin: 2rem auto; /* This adds space above and below the main content area */
+    padding: 0 2rem; /* This adds padding on the left and right sides */
+}
+
+main > section:first-of-type {
+    margin-top: 4rem; /* This increases the space above the first section by an additional 2rem */
 }
 
 section {
