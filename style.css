@@ -88,71 +88,29 @@ button:hover {
 }
 
 .social-icons {
-    text-align: center;
-    margin-top: 1.5em;
-}
-
-.social-icons ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-icons ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.social-icons ul li a {
-    display: inline-block;
-    background-color: #1c95c5;
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 15px; /* Adjust the space between the icons as needed */
 }
 
-.newsletter-signup {
-    text-align: center;
-    padding: 2em;
+.social-icons img {
+    width: 50px; /* Adjust the size of the icons as needed */
+    height: auto;
+}
+
+.newsletter-signup, .social-icons {
     background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
     border-radius: 8px;
-}
-
-.newsletter-signup form {
-    max-width: 500px;
-    margin: auto;
-}
-
-.form-group {
-    margin-bottom: 1em;
-}
-
-.form-group label {
-    display: block;
-    text-align: left;
-    margin-bottom: 0.5em;
-    font-size: 1.1em;
-}
-
-.form-group input[type=email] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 1em;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 1em;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
 }
 
 #calendar iframe {
-    width: 100%;
+    width: 100%; /* Make the calendar take full width of its container */
+    height: 600px; /* Set a fixed height for the calendar */
     border: 0;
     border-radius: 8px;
-    margin-top: 2rem;
 }
 
 footer {
@@ -160,19 +118,32 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 1rem 0;
-    font-size: 1em;
 }
 
 @media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-
     header h1 {
         font-size: 2em;
     }
 
     h2 {
         font-size: 1.5em;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .social-icons img {
+        width: 40px; /* Smaller icons for mobile */
+    }
+
+    .newsletter-signup {
+        padding: 1rem;
+    }
+
+    #calendar iframe {
+        height: auto; /* Let the calendar height be automatic to maintain aspect ratio */
     }
 }
