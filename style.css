@@ -32,6 +32,8 @@ main {
 
 .season-cover {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%; /* This will make the image as wide as its container */
     height: auto; /* Keep the aspect ratio of the image */
     margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
@@ -73,6 +75,12 @@ main {
 .centered-text {
     text-align: center;
     width: 100%; /* Take full width to center the text inside */
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section {
@@ -275,9 +283,16 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .newsletter-signup {
+    flex-direction: column; 
     header, main {
         padding: 1rem;
     }
+
+.form-group label, .form-group input[type=email] {
+        margin: 5px 0; /* Adjusts spacing for stacked layout */
+    }
+}
 
     .logo {
         max-width: 100px;
