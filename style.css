@@ -51,6 +51,13 @@ main {
     margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
 }
 
+.Social {
+    display: block;
+    max-width: 100%; /* This will make the image as wide as its container */
+    height: auto; /* Keep the aspect ratio of the image */
+    margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
+}
+
 section {
     background-color: #fff;
     margin-bottom: 1rem;
