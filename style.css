@@ -132,6 +132,13 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow for hover effect */
 }
 
+.responsive-img {
+    max-width: 100%; /* This ensures the image is responsive and fits the container */
+    height: auto; /* This keeps the image aspect ratio intact */
+    display: block; /* This makes sure the image is on its own line */
+    margin: 0 auto 20px; /* This centers the image and adds 20px space below it */
+}
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     #stay-connected .social-icons {
