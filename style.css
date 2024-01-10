@@ -146,13 +146,18 @@ button:hover {
 }
 
 #stay-connected ul {
-    list-style: none;
-    padding-left: 1.5rem; /* Indent for list items */
-    margin-bottom: 2rem; /* Space before newsletter signup */
+padding-left: 0; /* Remove default padding */
+text-align: center; 
 }
 
 #stay-connected ul li {
-    padding: 0.5rem 0; /* Vertical spacing for list items */
+    display: inline-block; /* Display list items inline */
+    margin-right: 15px; /
+}
+
+
+#stay-connected ul li:last-child{
+    margin-right: 0; 
 }
 
 #stay-connected ul li a {
@@ -170,13 +175,22 @@ button:hover {
 }
 
 .newsletter-signup {
-    text-align: center;
-    padding: 2rem 0; /* Visual separation from the social links */
-    width: 100%; /* Full width of its parent to align children */
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Centers the form horizontally */
-    align-items: center;
+    max-width: 400px; /* Set a max-width for the form */
+    margin: 0 auto;
+}
+
+.newsletter-signup label,
+.newsletter-signup input[type="email"],
+.newsletter-signup button {
+    display: block; /* Stack elements vertically */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Space between elements */
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 10px; /* Padding for the input field */
+    border: 1px solid #ccc; /* Border for the input field */
+    border-radius: 4px; /* Rounded corners for the input field */
 }
 
 .newsletter-signup h3 {
@@ -188,6 +202,16 @@ button:hover {
     color: #666;
     margin-bottom: 2rem; /* Space before the form */
     font-size: 1rem; /* Adjust font size as needed */
+}
+
+.newsletter-signup button {
+    background-color: #003366; /* Dark blue background for the button */
+    color: #ffffff; /* White text for the button */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border for the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold font for the button */
 }
 
 .form-group input[type=email], .form-group label {
