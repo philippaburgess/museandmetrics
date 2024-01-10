@@ -35,6 +35,7 @@ main {
     max-width: 100%; /* This will make the image as wide as its container */
     height: auto; /* Keep the aspect ratio of the image */
     margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
+    width: auto;
 }
 
 .360-YT {
@@ -42,6 +43,7 @@ main {
     max-width: 100%; /* This will make the image as wide as its container */
     height: auto; /* Keep the aspect ratio of the image */
     margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
+    width: auto;
 }
 
 .WTM {
@@ -49,6 +51,7 @@ main {
     max-width: 100%; /* This will make the image as wide as its container */
     height: auto; /* Keep the aspect ratio of the image */
     margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
+    width: auto;
 }
 
 .Social {
@@ -56,6 +59,7 @@ main {
     max-width: 100%; /* This will make the image as wide as its container */
     height: auto; /* Keep the aspect ratio of the image */
     margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
+    width: auto;
 }
 
 .Newsletter {
@@ -63,6 +67,12 @@ main {
     max-width: 100%; /* This will make the image as wide as its container */
     height: auto; /* Keep the aspect ratio of the image */
     margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
+    width: auto;
+}
+
+.centered-text {
+    text-align: center;
+    width: 100%; /* Take full width to center the text inside */
 }
 
 section {
@@ -71,6 +81,9 @@ section {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 h1, h2 {
@@ -151,6 +164,11 @@ button:hover {
 .newsletter-signup {
     text-align: center;
     padding: 2rem 0; /* Visual separation from the social links */
+    width: 100%; /* Full width of its parent to align children */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center;
 }
 
 .newsletter-signup h3 {
@@ -164,11 +182,17 @@ button:hover {
     font-size: 1rem; /* Adjust font size as needed */
 }
 
+.form-group input[type=email], .form-group label {
+    margin: 0 5px; /* Adds horizontal spacing */
+}
+
 .form-group input[type=email] {
+    margin: 0 5px;
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    max-width: 250px; 
 }
 
 .form-group button {
@@ -190,6 +214,8 @@ button:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .newsletter-signup {
+        flex-direction: column;
     #stay-connected ul {
         padding-left: 1rem; /* Smaller indent for list items on smaller screens */
     }
@@ -200,8 +226,9 @@ button:hover {
     margin-bottom: 1rem; /* Spacing between form elements */
 }
 
-.form-group label {
+.form-group label .form-group input[type=email] {
     display: block;
+    margin: 5px 0;
     margin-bottom: .5rem;
     color: #333; /* Darker for readability */
 }
