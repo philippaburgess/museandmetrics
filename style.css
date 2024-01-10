@@ -91,6 +91,48 @@ button:hover {
     background-color: #003366;
 }
 
+/* Stay Connected Section */
+#stay-connected {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Space between this section and the next */
+}
+
+/* Social Media Links */
+#stay-connected ul {
+    list-style-type: none; /* Removes the default list styling */
+    padding: 0;
+    margin: 1rem 0; /* Space above and below the list */
+}
+
+#stay-connected ul li {
+    display: inline-block; /* Place list items side by side */
+    margin: 0 10px; /* Spacing between list items */
+}
+
+#stay-connected ul li a {
+    color: #1c95c5; /* Brand color for the links */
+    font-weight: 700; /* Makes the text bold */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 1.2rem; /* Larger font size for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#stay-connected ul li a:hover {
+    color: #003366; /* Darker shade for hover state */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #stay-connected ul li {
+        display: block; /* Stack list items on top of each other */
+        margin: 10px auto; /* Center the items with automatic horizontal margins */
+    }
+}
+
 .social-icons {
     display: flex;
     justify-content: center;
