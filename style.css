@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-/* Reset Margin and Padding */
 * {
     margin: 0;
     padding: 0;
@@ -15,53 +14,46 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background: #fff;
     text-align: center;
     padding: 2rem 1rem;
 }
 
-/* Images should not exceed the width of the screen and should be centered */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* General text centering */
-.centered-text {
-    text-align: center;
-}
-
-/* Section styling */
 section {
-    background-color: #fff;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    width: 90%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
 
-h1, h2, h3 {
-    color: #003366;
-    font-weight: 700;
+h1, h2, h3, p {
+    margin-bottom: 1rem;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
 }
 
-h2, h3 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+h2 {
+    font-size: 20px;
 }
 
 p {
-    color: #666;
-    margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 a {
@@ -69,108 +61,57 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #003366;
-}
-
 button {
     background-color: #1c95c5;
-    color: #ffffff;
+    color: white;
+    padding: 10px 15px;
     border: none;
-    padding: 12px 24px;
-    cursor: pointer;
     border-radius: 5px;
-    font-weight: 700;
+    margin-top: 10px;
 }
 
-button:hover {
-    background-color: #003366;
-}
-
-/* List styling for social icons */
-#stay-connected ul {
-    list-style-type: none;
-    padding: 0;
+.newsletter-signup {
     text-align: center;
 }
 
-#stay-connected ul li {
-    display: inline-block;
-    margin: 5px 10px;
+.newsletter-signup h2, .newsletter-signup p {
+    margin-bottom: 20px;
 }
 
-#stay-connected ul li a {
-    background-color: #1c95c5;
-    color: #ffffff;
-    padding: 8px 16px;
-    border-radius: 4px;
+.form-group {
+    margin-bottom: 20px;
 }
 
-#stay-connected ul li a:hover {
-    background-color: #003366;
-}
-
-/* Newsletter section specific styling */
-.newsletter-signup {
-    background-color: #fff;
-    padding: 2rem;
-    margin: 2rem auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    max-width: 600px; /* Set a maximum width for larger screens */
-}
-
-.newsletter-signup h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-/* Adjust the margin for the form elements */
-.form-group label, .form-group input[type=email], .form-group button {
-    margin-bottom: 1rem;
+.form-group label {
+    font-size: 16px;
 }
 
 .form-group input[type=email] {
     width: 100%;
-    max-width: 300px; /* Make the email input field not too wide */
+    max-width: 300px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-top: 5px;
 }
 
-.form-group button {
-    padding: 10px 20px;
-    font-size: 1rem;
-}
-
-/* Calendar iframe styling */
-#calendar iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* Footer styling */
 footer {
-    background-color: #003366;
-    color: #ffffff;
+    background: #003366;
+    color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px 0;
+    margin-top: 20px;
+    width: 100%;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
-    h1, h2, h3 {
-        font-size: 1.5rem;
+    header h1 {
+        font-size: 18px;
     }
 
-    p, a, button {
-        font-size: 0.9rem;
+    section {
+        width: 95%;
     }
 
-    .newsletter-signup, .social-icons, section {
-        padding: 1rem;
+    .form-group input[type=email], button {
+        width: 90%;
     }
 }
