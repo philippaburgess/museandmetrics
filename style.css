@@ -15,72 +15,21 @@ body {
 }
 
 header {
-    background-color: #ffffff; /* Light background for the header */
+    background-color: #ffffff;
     text-align: center;
     padding: 2rem 1rem;
 }
 
-.logo {
-    max-width: 150px; /* Logo size, adjust as needed */
-}
-
-main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
-}
-
-.season-cover {
+.logo, .season-cover, .360-YT, .WTM, .Social, .Newsletter {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%; /* This will make the image as wide as its container */
-    height: auto; /* Keep the aspect ratio of the image */
-    margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
-    width: auto;
-}
-
-.360-YT {
-    display: block;
-    max-width: 100%; /* This will make the image as wide as its container */
-    height: auto; /* Keep the aspect ratio of the image */
-    margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
-    width: auto;
-}
-
-.WTM {
-    display: block;
-    max-width: 100%; /* This will make the image as wide as its container */
-    height: auto; /* Keep the aspect ratio of the image */
-    margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
-    width: auto;
-}
-
-.Social {
-    display: block;
-    max-width: 100%; /* This will make the image as wide as its container */
-    height: auto; /* Keep the aspect ratio of the image */
-    margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
-    width: auto;
-}
-
-.Newsletter {
-    display: block;
-    max-width: 100%; /* This will make the image as wide as its container */
-    height: auto; /* Keep the aspect ratio of the image */
-    margin: 1rem auto; /* Adds top and bottom margin for space, centers image horizontally */
-    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
 }
 
 .centered-text {
     text-align: center;
-    width: 100%; /* Take full width to center the text inside */
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100%;
 }
 
 section {
@@ -91,45 +40,45 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 h1, h2 {
-    color: #003366; /* A dark blue shade from your branding */
-    font-weight: 700; /* Added weight for better readability */
+    color: #003366;
+    font-weight: 700;
 }
 
 h1 {
-    margin-bottom: 0.5rem; /* Spacing below the main title */
+    margin-bottom: 0.5rem;
 }
 
 p {
-    color: #666; /* A softer shade for readability */
+    color: #666;
     margin-bottom: 1rem;
 }
 
 a {
-    color: #1c95c5; /* A vibrant blue from your branding */
+    color: #1c95c5;
     text-decoration: none;
 }
 
 a:hover {
-    color: #003366; /* Darker blue on hover */
+    color: #003366;
 }
 
 button {
-    background-color: #1c95c5; /* Use the vibrant blue from your branding */
+    background-color: #1c95c5;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
-    font-weight: 700; /* Make button text bold */
+    font-weight: 700;
 }
 
 button:hover {
-    background-color: #003366; /* Darker blue on hover */
+    background-color: #003366;
 }
 
 #stay-connected {
@@ -137,27 +86,28 @@ button:hover {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem; /* Space between sections */
+    margin-bottom: 2rem;
 }
 
 #stay-connected h2 {
     margin-bottom: 1rem;
-    color: #003366; /* Dark blue for consistency with other headings */
+    color: #003366;
 }
 
 #stay-connected ul {
-padding-left: 0; /* Remove default padding */
-text-align: center; 
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 #stay-connected ul li {
-    display: inline-block; /* Display list items inline */
-    margin-right: 15px; /
+    display: inline-block;
+    margin-right: 15px;
 }
 
-
-#stay-connected ul li:last-child{
-    margin-right: 0; 
+#stay-connected ul li:last-child {
+    margin-right: 0;
 }
 
 #stay-connected ul li a {
@@ -165,141 +115,55 @@ text-align: center;
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    display: inline-block; /* To apply padding and background */
-    margin-bottom: 0.5rem; /* Space between links */
+    margin-bottom: 0.5rem;
     transition: background-color 0.3s;
 }
 
 #stay-connected ul li a:hover {
-    background-color: #003366; /* Darker blue on hover */
+    background-color: #003366;
 }
 
 .newsletter-signup {
-    max-width: 400px; /* Set a max-width for the form */
+    max-width: 400px;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
 .newsletter-signup label,
 .newsletter-signup input[type="email"],
 .newsletter-signup button {
-    display: block; /* Stack elements vertically */
-    width: 100%; /* Full width */
-    margin-bottom: 10px; /* Space between elements */
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .newsletter-signup input[type="email"] {
-    padding: 10px; /* Padding for the input field */
-    border: 1px solid #ccc; /* Border for the input field */
-    border-radius: 4px; /* Rounded corners for the input field */
-}
-
-.newsletter-signup h3 {
-    color: #003366; /* Dark blue color for the newsletter heading */
-    margin-bottom: 1rem;
-}
-
-.newsletter-signup p {
-    color: #666;
-    margin-bottom: 2rem; /* Space before the form */
-    font-size: 1rem; /* Adjust font size as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 250px; /* Adjust the width of the email input as desired */
+    margin: 0 auto; /* Center the email input */
 }
 
 .newsletter-signup button {
-    background-color: #003366; /* Dark blue background for the button */
-    color: #ffffff; /* White text for the button */
-    padding: 10px 20px; /* Padding for the button */
-    border: none; /* No border for the button */
-    border-radius: 4px; /* Rounded corners for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-weight: bold; /* Bold font for the button */
-}
-
-.form-group input[type=email], .form-group label {
-    margin: 0 5px; /* Adds horizontal spacing */
-}
-
-.form-group input[type=email] {
-    margin: 0 5px;
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    max-width: 250px; 
-}
-
-.form-group button {
-    background-color: #003366; /* Dark blue to match the headers */
+    background-color: #003366;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 700; /* Make button text bold */
-    margin-top: 1rem; /* Space above the button */
-    transition: background-color 0.3s;
-}
-
-.form-group button:hover {
-    background-color: #1c95c5; /* Lighter blue for hover state */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .newsletter-signup {
-        flex-direction: column;
-    #stay-connected ul {
-        padding-left: 1rem; /* Smaller indent for list items on smaller screens */
-    }
-}
-
-
-.form-group {
-    margin-bottom: 1rem; /* Spacing between form elements */
-}
-
-.form-group label .form-group input[type=email] {
-    display: block;
-    margin: 5px 0;
-    margin-bottom: .5rem;
-    color: #333; /* Darker for readability */
-}
-
-.form-group input[type=email] {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.form-group button {
-    display: block; /* Center the button */
-    width: auto; /* Do not stretch to full width */
-    margin: 1rem auto 0; /* Just margin-top and centered */
-    background-color: #1c95c5;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.form-group button:hover {
-    background-color: #003366;
-}
-
-
-/* If the Google Calendar iframe needs to be full width, adjust padding as needed */
 #calendar iframe {
     width: 100%;
-    height: 600px; /* Adjust height as needed */
+    height: 600px;
     border: none;
     border-radius: 8px;
 }
 
 footer {
-    background-color: #003366; /* A dark blue shade for the footer */
+    background-color: #003366;
     color: #ffffff;
     text-align: center;
     padding: 1rem 0;
@@ -307,31 +171,17 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .newsletter-signup {
-    flex-direction: column; 
-    header, main {
-        padding: 1rem;
+    .newsletter-signup,
+    #stay-connected ul {
+        flex-direction: column;
     }
-
-.form-group label, .form-group input[type=email] {
-        margin: 5px 0; /* Adjusts spacing for stacked layout */
+    
+    .form-group label, .form-group input[type=email] {
+        margin: 5px 0;
     }
-}
 
     .logo {
         max-width: 100px;
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-}
+   
