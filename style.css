@@ -86,32 +86,27 @@ button:hover {
     background-color: #003366;
 }
 
-#stay-connected {
-    text-align: center;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-}
-
-#stay-connected ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-#stay-connected ul li a {
-    background-color: #1c95c5; /* Blue background */
+#stay-connected .social-icons a {
+    background-color: #1c95c5; /* Brand blue color */
     color: white; /* White text */
-    padding: 10px 15px; /* Padding for spacing */
-    border-radius: 4px; /* Rounded corners */
-    transition: background-color 0.3s; /* Transition for hover effect */
-    display: inline-block; /* Necessary for padding and border-radius */
+    padding: 10px 15px; /* Top and bottom padding 10px, left and right padding 15px */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 5px; /* Space between buttons */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
 
-#stay-connected ul li a:hover {
+#stay-connected .social-icons a:hover {
     background-color: #003366; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow for hover effect */
+}
+
+#stay-connected .social-icons img {
+    margin-bottom: 20px; /* Space between the icons and text links */
+}
+
+#stay-connected {
+    padding-bottom: 2rem; /* Increase bottom padding to give more space */
 }
 
 #calendar iframe {
