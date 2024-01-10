@@ -22,12 +22,12 @@ header {
 
 .logo, .season-cover, .360-YT, .WTM, .Social, .Newsletter {
     display: block;
-    max-width: 90%;
+    max-width: 90%; /* Adjust to your preference */
     height: auto;
     margin: 2rem auto;
 }
 
-.centered-text, .newsletter-signup, section, footer {
+.centered-text {
     text-align: center;
     width: 100%;
 }
@@ -44,11 +44,11 @@ h1 {
     color: #003366;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 2rem; /* Increase as needed */
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Increase as needed */
     color: #003366;
     margin-bottom: 1rem;
 }
@@ -56,13 +56,13 @@ h2 {
 p {
     color: #666;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Increase as needed */
 }
 
 a {
     color: #1c95c5;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Increase as needed */
 }
 
 a:hover {
@@ -76,7 +76,7 @@ button {
     padding: 15px 30px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Increase as needed */
     font-weight: 700;
 }
 
@@ -87,7 +87,7 @@ button:hover {
 #stay-connected ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 2rem;
+    text-align: center;
 }
 
 #stay-connected ul li {
@@ -116,29 +116,41 @@ button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.newsletter-signup h3 {
+.newsletter-signup h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-.form-group input[type=email], .form-group label {
-    display: block;
-    width: 100%;
-    margin: 10px auto;
-    font-size: 1.2rem;
+.newsletter-signup p {
+    margin-bottom: 2rem;
+}
+
+.newsletter-signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: .5rem;
 }
 
 .form-group input[type=email] {
-    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    max-width: 300px;
 }
 
 .form-group button {
-    margin-top: 1rem;
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
 }
 
 #calendar iframe {
@@ -151,17 +163,9 @@ button:hover {
 footer {
     background-color: #003366;
     color: #ffffff;
+    text-align: center;
     padding: 1rem 0;
-    font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
-    h1, h2, p, a, button {
-        font-size: 1rem;
-    }
-    
-    .newsletter-signup {
-        padding: 2rem;
-        margin: 1rem auto;
-    }
-}
+    h1, h2,
