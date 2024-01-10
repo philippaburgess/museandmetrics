@@ -108,8 +108,8 @@ button:hover {
     display: flex; /* Use flexbox for a horizontal layout */
     justify-content: center; /* Center the items horizontally */
     align-items: center; /* Center the items vertically */
-    gap: 30px; /* Space between the icons */
-    padding: 1rem 0; /* Padding above and below the icons */
+    gap: 50px; /* Space between the icons */
+    padding: 2rem 0; /* Padding above and below the icons */
 }
 
 #stay-connected .social-icons a {
@@ -120,7 +120,7 @@ button:hover {
     text-decoration: none; /* Remove underlines from links */
     font-size: 1rem; /* Font size for the links */
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
-    margin-top: 25px; 
+    margin-top: 15px; 
     margin-bottom: 15px;
     display: inline-flex; /* Inline flex to align text and icons */
     align-items: center; /* Align items vertically */
