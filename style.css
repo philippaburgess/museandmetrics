@@ -120,6 +120,7 @@ button:hover {
     text-decoration: none; /* Remove underlines from links */
     font-size: 1rem; /* Font size for the links */
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+    margin-top: 15px; 
     margin-bottom: 15px;
     display: inline-flex; /* Inline flex to align text and icons */
     align-items: center; /* Align items vertically */
