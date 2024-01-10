@@ -20,26 +20,27 @@ header {
     padding: 2rem 1rem;
 }
 
-.logo, .season-cover, .360-YT, .WTM, .Social, .Newsletter {
+/* Images should not exceed the width of the screen and should be centered */
+img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* General text centering */
 .centered-text {
     text-align: center;
-    width: 100%;
 }
 
-section, .newsletter-signup, .social-icons {
+/* Section styling */
+section {
     background-color: #fff;
-    margin: 20px auto;
     padding: 2rem;
+    margin-bottom: 2rem;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    position: relative;
-    width: auto;
 }
 
 h1, h2, h3 {
@@ -48,8 +49,8 @@ h1, h2, h3 {
 }
 
 h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 h2, h3 {
@@ -86,6 +87,7 @@ button:hover {
     background-color: #003366;
 }
 
+/* List styling for social icons */
 #stay-connected ul {
     list-style-type: none;
     padding: 0;
@@ -93,7 +95,7 @@ button:hover {
 }
 
 #stay-connected ul li {
-    display: inline;
+    display: inline-block;
     margin: 5px 10px;
 }
 
@@ -108,28 +110,32 @@ button:hover {
     background-color: #003366;
 }
 
+/* Newsletter section specific styling */
 .newsletter-signup {
-    max-width: 100%;
-    margin-top: 20px;
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px; /* Set a maximum width for larger screens */
 }
 
-.newsletter-signup form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.newsletter-signup h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
-.form-group label {
-    margin-bottom: .5rem;
+/* Adjust the margin for the form elements */
+.form-group label, .form-group input[type=email], .form-group button {
+    margin-bottom: 1rem;
 }
 
 .form-group input[type=email] {
-    width: calc(100% - 40px);
-    max-width: 500px;
+    width: 100%;
+    max-width: 300px; /* Make the email input field not too wide */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 1rem;
 }
 
 .form-group button {
@@ -137,6 +143,7 @@ button:hover {
     font-size: 1rem;
 }
 
+/* Calendar iframe styling */
 #calendar iframe {
     width: 100%;
     height: 600px;
@@ -145,6 +152,7 @@ button:hover {
     margin-top: 20px;
 }
 
+/* Footer styling */
 footer {
     background-color: #003366;
     color: #ffffff;
@@ -152,33 +160,17 @@ footer {
     padding: 1rem 0;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    header {
-        padding: 1rem 0.5rem;
-    }
-
-    h1 {
+    h1, h2, h3 {
         font-size: 1.5rem;
     }
 
-    h2, h3 {
-        font-size: 1.25rem;
-    }
-
-    p {
+    p, a, button {
         font-size: 0.9rem;
     }
 
-    .logo, .season-cover, .360-YT, .WTM, .Social, .Newsletter {
-        max-width: 95%;
-    }
-
-    .newsletter-signup form {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .form-group input[type=email] {
-        width: calc(100% - 20px);
+    .newsletter-signup, .social-icons, section {
+        padding: 1rem;
     }
 }
