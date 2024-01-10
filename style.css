@@ -33,12 +33,8 @@ header h3 {
 
 main {
     max-width: 1200px;
-    margin: 2rem auto; /* This adds space above and below the main content area */
-    padding: 0 2rem; /* This adds padding on the left and right sides */
-}
-
-main > section:first-of-type {
-    margin-top: 4rem; /* This increases the space above the first section by an additional 2rem */
+    margin: 2rem auto;
+    padding: 0 2rem;
 }
 
 section {
@@ -46,7 +42,6 @@ section {
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 section img {
@@ -91,65 +86,37 @@ button:hover {
     background-color: #003366;
 }
 
-#stay-connected .social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Adjust the gap between the icons as needed */
-    margin-top: 1rem; /* Space between the text and the icon links */
-}
-
-#stay-connected .social-links a {
-    font-size: 1.2rem; /* Adjust the font size as needed */
-    color: #1c95c5; /* Your brand's blue color */
-    text-decoration: none; /* No underlines for the links */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-#stay-connected .social-links a:hover {
-    color: #003366; /* Darker blue on hover */
-}
-
-/* Adjustments for the social media icons */
-#stay-connected .social-icons img {
-    width: 40px; /* Set the size of the icons */
-    height: 40px;
-    margin: 0 8px; /* Space between icons */
-}
-
-/* Making sure the icons and text links are vertically aligned */
-#stay-connected .social-icons,
-#stay-connected .social-links {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Responsive adjustments for a better mobile view */
-@media (max-width: 768px) {
-    #stay-connected .social-links,
-    #stay-connected .social-icons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #stay-connected .social-links a,
-    #stay-connected .social-icons img {
-        margin: 8px 0; /* Vertical spacing for a stacked layout */
-    }
-}
-
-.newsletter-signup, .social-icons {
-    background-color: #fff;
+#stay-connected {
+    text-align: center;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     margin-bottom: 2rem;
 }
 
+#stay-connected ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#stay-connected ul li a {
+    background-color: #1c95c5; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for spacing */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    display: inline-block; /* Necessary for padding and border-radius */
+}
+
+#stay-connected ul li a:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
 #calendar iframe {
-    width: 100%; /* Make the calendar take full width of its container */
-    height: 600px; /* Set a fixed height for the calendar */
+    width: 100%;
+    height: 600px;
     border: 0;
     border-radius: 8px;
 }
@@ -170,21 +137,12 @@ footer {
         font-size: 1.5em;
     }
 
-    .social-icons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .social-icons img {
-        width: 40px; /* Smaller icons for mobile */
-    }
-
-    .newsletter-signup {
-        padding: 1rem;
+    #stay-connected ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
     #calendar iframe {
-        height: auto; /* Let the calendar height be automatic to maintain aspect ratio */
+        height: auto;
     }
 }
