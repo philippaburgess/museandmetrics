@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-/* Reset styles */
+/* Reset Margin and Padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
+body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f1f1f1;
     line-height: 1.6;
@@ -18,112 +17,162 @@ body, html {
 header {
     background-color: #ffffff;
     text-align: center;
-    padding: 20px 0;
+    padding: 2rem 1rem;
 }
 
 header h1 {
-    color: #003366;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin: 0;
+    font-size: 2.5em;
 }
 
-header p {
-    font-size: 1.2rem;
+header h3 {
+    margin-top: 0.5em;
+    font-weight: normal;
     color: #666;
 }
 
 main {
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    margin: 2rem auto;
+    padding: 0 2rem;
 }
 
-.content-section {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
+section {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.responsive-img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.social-icons img {
-    margin: 0 10px;
-    width: 50px; /* Adjust the size of your social icons */
+section img {
+    max-width: 100%;
     height: auto;
 }
 
-#newsletter-signup {
+h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 1.75em;
+}
+
+p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+}
+
+a {
+    color: #1c95c5;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+a:hover {
+    color: #003366;
+}
+
+button {
+    background-color: #1c95c5;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+.social-icons {
     text-align: center;
+    margin-top: 1.5em;
 }
 
-#newsletter-form {
-    max-width: 400px;
-    margin: 20px auto;
+.social-icons ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-#newsletter-form label {
-    margin-bottom: 5px;
-    display: block;
+.social-icons ul li {
+    display: inline;
+    margin-right: 10px;
 }
 
-#newsletter-form input[type="email"] {
-    width: 100%;
+.social-icons ul li a {
+    display: inline-block;
+    background-color: #1c95c5;
+    color: #fff;
     padding: 10px;
-    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-signup {
+    text-align: center;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.newsletter-signup form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+.form-group input[type=email] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 1em;
     border-radius: 4px;
     border: 1px solid #ccc;
-}
-
-#newsletter-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #1c95c5;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-#newsletter-form button:hover {
-    background-color: #003366;
+    font-size: 1em;
 }
 
 #calendar iframe {
     width: 100%;
-    height: 600px;
     border: 0;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 footer {
     background-color: #003366;
     color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
+    font-size: 1em;
 }
 
 @media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
     header h1 {
-        font-size: 1.8rem;
+        font-size: 2em;
     }
 
-    header p {
-        font-size: 1rem;
-    }
-
-    .social-icons img {
-        width: 40px; /* Smaller social icons for mobile */
-    }
-
-    #newsletter-form {
-        padding: 20px;
+    h2 {
+        font-size: 1.5em;
     }
 }
